@@ -4,14 +4,16 @@ from unittest.case import _AssertRaisesBaseContext
 class Product:
     def __init__(self,name,price,quantity):
         if price < 0 or quantity < 0:
-            raise ValueError('Price and quantity cannot be negative')
+            # raise ValueError('Price and quantity cannot be negative')
+            pass
         self.name = name
         self.price = price
         self.quantity = quantity
     
     def calculateTotal(self):
         if self.price < 0 or self.quantity < 0:
-            raise ValueError('Price and quantity cannot be negative')
+            # raise ValueError('Price and quantity cannot be negative')
+            pass
         return self.price * self.quantity
     
 class ShoppingCart:
